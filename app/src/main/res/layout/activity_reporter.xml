@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".view.activity.ReporterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_reporter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            app:titleEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:paddingBottom="30dp"
+                app:layout_collapseMode="parallax">
+
+                <TextView
+                    app:layout_constraintEnd_toStartOf="@+id/tv_total_cards_count"
+                    android:id="@+id/tv_label_total_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/productsansregular"
+                    android:text="@string/total_cards"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_total_cards_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/productsansregular"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_label_total_cards"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="28" />
+
+                <TextView
+                    android:id="@+id/tv_label_learned_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/productsansregular"
+                    android:text="@string/learned_"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_learned_cards_count"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_label_total_cards" />
+
+                <TextView
+                    android:id="@+id/tv_learned_cards_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/productsansregular"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_label_learned_cards"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_total_cards_count"
+                    tools:text="28" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:theme="@style/ToolBarLight"
+                android:id="@+id/toolbar_reporter"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/app_bar_reporter">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_head_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:chipBackgroundColor="@android:color/white"
+                app:chipStrokeColor="@color/colorSecondary"
+                app:chipStrokeWidth="1dp"
+                android:text="@string/month" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintEnd_toStartOf="@+id/card_added"
+                    android:id="@+id/card_reviewed"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:id="@+id/tv_label_reviewed_cards"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="18dp"
+                            android:fontFamily="@font/productsansregular"
+                            android:text="@string/reviewed_cards"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/tv_reviewed_cards"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:textSize="29sp"-->
+                        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                        <!--                        app:layout_constraintEnd_toEndOf="@+id/tv_label_reviewed_cards"-->
+                        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                        app:layout_constraintTop_toBottomOf="@+id/tv_label_reviewed_cards"-->
+                        <!--                        tools:text="12" />-->
+
+                        <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                            android:id="@+id/cp_reviewed"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12dp"
+                            android:layout_marginTop="12dp"
+                            app:cpb_indeterminate_mode="false"
+                            app:enableProgressAnimation="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_label_reviewed_cards"
+                            app:progressBackgroundStrokeWidth="18dp"
+                            app:progressStrokeWidth="8dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    app:layout_constraintHorizontal_weight="1"
+                    android:id="@+id/card_added"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/card_reviewed"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_label_added_cards"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="18dp"
+                            android:fontFamily="@font/productsansregular"
+                            android:text="@string/added_cards"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/tv_added_cards"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:textSize="29sp"-->
+                        <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+                        <!--                            app:layout_constraintEnd_toEndOf="@+id/tv_label_added_cards"-->
+                        <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                            app:layout_constraintTop_toBottomOf="@+id/tv_label_added_cards"-->
+                        <!--                            tools:text="12" />-->
+
+                        <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                            android:id="@+id/cp_added"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12dp"
+                            app:cpb_indeterminate_mode="false"
+                            app:enableProgressAnimation="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_label_added_cards"
+                            app:progressBackgroundStrokeWidth="18dp"
+                            app:progressStrokeWidth="8dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="8dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="8dp"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_vp_handler_added"
+                        android:id="@+id/tv_vp_handler_review"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:fontFamily="@font/productsansregular"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="24sp"
+                        android:text="@string/reviewed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:id="@+id/tv_vp_handler_added"
+                        app:layout_constraintStart_toEndOf="@+id/tv_vp_handler_review"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="20sp"
+                        android:text="@string/added"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/vp_bar_chart"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_vp_handler_review" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

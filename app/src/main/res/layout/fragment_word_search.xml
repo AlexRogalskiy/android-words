@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.yasinhajilou.dileit.view.fragment.SearchFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_search_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        app:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/btn_backward_search"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.SearchView
+
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:searchIcon="@null"
+                app:iconifiedByDefault="false"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:id="@+id/edtSearchWord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:queryHint="@string/type_your_word"
+                app:queryBackground="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:inputType="textFilter"
+                android:maxLines="1" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_ragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_search_fragment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

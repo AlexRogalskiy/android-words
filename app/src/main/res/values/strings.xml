@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">Dileit</string>
+    <string name="input_word">Tap here to search…</string>
+    <string name="camera">camera</string>
+    <string name="voice">Voice</string>
+    <string name="english">English</string>
+    <string name="persian">Persian</string>
+    <string name="drawing">Drawing</string>
+    <string name="history">History</string>
+    <string name="your_search_history_is_empty">Your search history is empty.</string>
+    <string name="review_leitner_box">Review Leitner Box</string>
+    <string name="mock_item_leit"><u>24 Items</u></string>
+    <string name="type_your_word">Type Your Word</string>
+    <string name="words">Words</string>
+    <string name="transition_card_fragment">transitionCardView</string>
+    <string name="from_dictionary">from Dictionary</string>
+    <string name="costume_meaning">Costume</string>
+    <string name="guide">Add Guide:</string>
+    <string name="simple_sentence_which_helps_you_to_remember">Type here a guide to remember(Optional)</string>
+    <string name="save">Save</string>
+
+    <string name="add_new_word_or_phrase_in_leitner">Add new customized word or phrase in Leitner</string>
+    <string name="word_or_phrase">word or phrase</string>
+    <string name="translation_or_definition">Translation or Definition</string>
+    <string name="leitner_manager">Leitner Manager</string>
+    <string name="know">know</string>
+    <string name="don_t_know">don\'t know</string>
+    <string name="today_s_words">Today\'s words</string>
+    <string name="new_words">new words</string>
+    <string name="translation">Translation</string>
+    <string name="new_">New</string>
+    <string name="review">Review</string>
+    <string name="learned">Learned</string>
+    <string name="help">help</string>
+    <string name="setting">Setting</string>
+    <string name="reporter">Reporter</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="card_content_category">Card Category</string>
+
+    <string name="leitner_guide_per">لایتنر چیه؟\n\n
+یکی از بهترین استراتژی‌های به خاطرسپردن مطالب پیرَوی از سیستم لایتنره. \"دیلایت\" اینجاست که به شما کمک کنه \"لغات دیکشنری\" ویا \"موارد دلخواه اضافه شدتون\" رو طبق این سیستم به خاطر بسپرین.\n\n
+چطور کار می‌کنه؟\n\n
+هربار که شما کارت جدیدی به جعبه لایتنر اضافه میکنید، به دسته \"New\" انتقال پیدا میکنه.در واقع این دسته، کارت‌هایی هستن که تاحالا مرور
+نشدن.\n
+زمانی که این دسته کارت ها مرور بشن وارد بخش \"Review\" میشن، اگر شما جواب کارت رو ندونید به قسمت \"box1\" میره و اگه جواب کارت رو بدونید، به همون بخش و قسمت \"box2\" میره.\n\n
+زمان مرور کردن کارت‌ها، در هر \"box\" که باشید، هر بار که جواب کارتی رو ندونید به \"box1\" برمیگرده و اگر جواب اون رو بدونید به \"box\" بعدی انتقال پیدا میکنه.\n
+\n
+اگر هنگام مرور، جواب کارت‌های جعبه پنجم رو میدونستید به بخش بعدی یعنی \"Learned\" انتقال پیدا می‌کنه، که به این معنیه که شما محتوای اون کارت رو یاد گرفتید.\n
+زمان دقیق مرور هر جعبه که \"دیلایت\" برای شما به صورت خودکار مدیریت می‌کنه:\n
+جعبه اول: هر روز\n
+جعبه دوم: هر ۲ روز\n
+جعبه سوم: هر ۴ روز\n
+جعبه چهارم: هر ۹ روز\n
+جعبه پنجم: هر ۱۴ روز\n</string>
+
+    <string name="leitner_guide_eng">
+        What is Leitner?
+        \n
+\nOne of the best strategies for memorizing words and phrases is following Leitner system principles. "\Dileit"\ is here to helps you memorizing "\Dictionary words"\ and "\Customised items"\ in order to Leitner principles.
+\n\n
+How does it work?\n\n
+Each time you adding a new card in Leitner Box, it will found in the "\New"\ section. In fact, in this section, There are cards which you have never reviewed.
+ \n \n
+When cards of this section reviewed, they will move to "\Review"\ section, while you are reviewing this section, if you don\'t know the answer of card it will place in "\Box1"\ and if you know the answer of card it will place in "\Box2"\.
+\n\nwhile reviewing cards, in each "\Box"\, if you know the answer of card it will move to the next box and if you don\'t know the answer, it will back to "\Box1"\.
+\n
+\nIn the time of reviewing if you know the answer to "\Box5"\ it will move to the next section called "\Learned"\. It means you learned that card.
+\nYou should review each "\box"\ in a specific time which "\Dileit"\ handles it for you:
+        \n
+\nBox1: every day
+\nBox2: every 2 days
+\nBox3: every 4 days
+\nBox4: every 9 days
+\nBox5: every 14 days
+    </string>
+    <string name="last_24_h">Last 24 hours</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="last_week">Last Week</string>
+    <string name="first">1st</string>
+    <string name="second">2nd</string>
+    <string name="third">3rd</string>
+    <string name="th_date">th</string>
+    <string name="last_month">Last 30 days</string>
+    <string name="last_year">Last 12 month</string>
+    <string name="leitner_review_reminder">Leitner Review Reminder</string>
+    <string name="reminder_descriotion">Reminds Reviewing Leitner Cards By Specific Time.</string>
+    <string name="are">are </string>
+    <string name="is">is </string>
+    <string name="cards">cards </string>
+    <string name="card">card </string>
+    <string name="there">There </string>
+    <string name="leitner">Leitner </string>
+    <string name="for_reviwing">for reviewing.</string>
+    <string name="review_today_cards">Review Today Cards!</string>
+    <string name="verb">Verb</string>
+    <string name="noun">Noun</string>
+    <string name="adjective">Adjective</string>
+    <string name="adverb">Adverb</string>
+    <string name="phrase">Phrase</string>
+    <string name="other">Other</string>
+    <string name="pl_add_cat">please add cart category!</string>
+    <string name="pl_fill_fields"><![CDATA[please fill word title or definition!]]></string>
+    <string name="pl_fill_cat"><![CDATA[please fill Card Category!]]></string>
+    <string name="card_duplicated">A card with title exist! Please change Word/Phrase.</string>
+    <string name="added">Added.</string>
+    <string name="error">An error occurred.</string>
+    <string name="nees_speak">Need to speak</string>
+    <string name="no_card_for_review">There is no card for reviewing :)</string>
+    <string name="item_deleted">Item deleted</string>
+    <string name="leitner_updated">Leitner Card Updated!</string>
+    <string name="enf_def">English Definition</string>
+    <string name="sec_translation">Second Translation</string>
+    <string name="delete_leitner_title">Delete Leitner Card</string>
+    <string name="delete_leitner_caption">Do you want to delete this leitner card?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alarm_cap">Alarm enabled for </string>
+    <string name="delete_his">Delete History</string>
+    <string name="delete_his_cap">Are you want to delete Search History?</string>
+    <string name="deleted_successfully">Deleted Successfully</string>
+    <string name="remove_leitner">Remove Word</string>
+    <string name="remove_leitner_cap">This word exists in Leitner box, do you want to remove it?</string>
+    <string name="last_seven_day">Last 7 day.</string>
+    <string name="box_1">Box 1</string>
+    <string name="box_2">Box 2</string>
+    <string name="box_3">Box 3</string>
+    <string name="box_4">Box 4</string>
+    <string name="box_5">Box 5</string>
+    <string name="reviewed_cards">Reviewed Cards</string>
+    <string name="added_cards">Added Cards</string>
+    <string name="learned_">Learned:</string>
+    <string name="total_cards">Total Cards:</string>
+    <string name="american">American</string>
+    <string name="british">British</string>
+    <string name="nothing_reviewed">Nothing Reviewed :(</string>
+    <string name="review_again_for_today">Review Again For Today</string>
+    <string name="reviewed">Reviewed</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="english_synonyms">English Synonyms</string>
+    <string name="examples">Examples</string>
+    <string name="about">About Us</string>
+    <string name="contact_us">Contact us:</string>
+    <string name="open_source">Open Source:</string>
+    <string name="share_body">Hey \n Dileit is a dictionary app with the Leitner system. you can download it from here: \n Myket:https://myket.ir/app/com.yasinhajilou.dileit \n Cafebazzer: https://cafebazaar.ir/app/com.yasinhajilou.dileit </string>
+    <string name="share_diliet">Share Dileit</string>
+    <string name="share_via">Share App Via:</string>
+    <string name="no_app_rating">Didn\'t find appropriate application for rating!</string>
+    <string name="no_mail">There are no email clients installed.</string>
+    <string name="tool_tip_dec">You Can Add Current Word To Leitner Box By Tapping This Button!</string>
+    <string name="first_time_search_caution">For first it take longer than usual</string>
+    <string name="copy_right">اپلیکیشن دیلایت به صورت متن‌باز و رایگان منتشر شده است، هدف اپلیکیشن کمک به جامعه‌ی زبان‌آموزان فارسی‌زبان و جامعه‌ی برنامه‌نویسان ایرانی است، از این بابت هرگونه استفاده از امکانات و تکنولوژی‌های پیاده‌شده در داخل اپلیکیشن با ذکر منبع بلامانع است.
+\n
+الگوریتم لایتنر پیاده‌شده داخل اپ از سایت ویکیپدیا الهام گرفته شده است،  به آدرس:
+\n
+   https://en.wikipedia.org/wiki/Leitner_system
+ \n
+دیتابیس‌ داخل برنامه از سایت‌های خارجی دریافت شده و با ایجاد تغییراتی، مناسب استفاده در دستگاه‌های اندرویدی شده. با این حال این منبع  فاقد نماینده‌ی قانونی داخلی برای وجود
+حق انتشار و کپی‌رایت است و به آدرس زیر قابل دسترس است:
+\n
+https://glosbe.com
+</string>
+
+</resources>
